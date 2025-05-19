@@ -1,21 +1,39 @@
 [project]
-name = "Energy-Attribute-Certificate-Trading"
-description = ""
+name = 'Energy-Attribute-Certificate-Trading'
+description = ''
 authors = []
 telemetry = true
-cache_dir = "./.cache"
+cache_dir = './.cache'
+requirements = []
+[contracts.ceritificate-retirement]
+path = 'contracts/ceritificate-retirement.clar'
+clarity_version = 2
+epoch = 2.5
 
-# [contracts.counter]
-# path = "contracts/counter.clar"
+[contracts.certificate-issuance]
+path = 'contracts/certificate-issuance.clar'
+clarity_version = 2
+epoch = 2.5
 
+[contracts.certificate-trading]
+path = 'contracts/certificate-trading.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.generator-verification]
+path = 'contracts/generator-verification.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.production-tracking]
+path = 'contracts/production-tracking.clar'
+clarity_version = 2
+epoch = 2.5
 [repl.analysis]
-passes = ["check_checker"]
-check_checker = { trusted_sender = false, trusted_caller = false, callee_filter = false }
+passes = ['check_checker']
 
-# Check-checker settings:
-# trusted_sender: if true, inputs are trusted after tx_sender has been checked.
-# trusted_caller: if true, inputs are trusted after contract-caller has been checked.
-# callee_filter: if true, untrusted data may be passed into a private function without a
-# warning, if it gets checked inside. This check will also propagate up to the
-# caller.
-# More informations: https://www.hiro.so/blog/new-safety-checks-in-clarinet
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
