@@ -7,3 +7,7 @@ S
 #contracts/certificate-issuance.clar,6/3/63e862ebcc0825549ca38cff5a628aa1f98e034b
 R
 "contracts/certificate-trading.clar,6/a/6a4a04a93707f0194f9b4336fcdf16258fbe493a
+R
+"contracts/production-tracking.clar,0/b/0b416c10fdeb82c08aa0dfc8172b54f6b1e5b7c2
+U
+%contracts/generator-verification.clar,e/1/e1ebf061ab2472501f5b76c48a325a5138e2b7be
